@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/formal-method/FMAssetStream"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Kyle Shank" => "kyle.shank@gmail.com" }
+  s.author           = { "Kyle Shank" => "kyle@formalmethod.net" }
   s.source           = { :git => "https://github.com/formal-method/FMAssetStream.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/formal_method'
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.resources = 'Pod/Assets/*.png'
+  # s.resources = 'Pod/Assets/*.png'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
