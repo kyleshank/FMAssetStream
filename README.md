@@ -24,8 +24,6 @@ The `assetStreamDelegate` reference here must implement the following method for
         [self updateProgressUI: percentage];
     }
 
-## Requirements
-
 ## Installation
 
 FMAssetStream is available through [CocoaPods](http://cocoapods.org). To install
