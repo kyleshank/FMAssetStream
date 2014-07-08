@@ -8,7 +8,9 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.  The example is a all ready to go and will actually upload a test file to a remote server to demonstrate functionality.  Definitely take a look at the example to see how things work.
+
+When you want to use FMAssetStream in your own project do the following...
 
 You'll need to import the category:
 
