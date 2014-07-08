@@ -10,19 +10,18 @@
 Pod::Spec.new do |s|
   s.name             = "FMAssetStream"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FMAssetStream."
+  s.summary          = "A way to do streaming file uploads of ALAssets using a setAsset category method on NSMutableRequest."
   s.description      = <<-DESC
-                       An optional longer description of FMAssetStream
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       A way to do streaming file uploads of ALAsset's using a setAsset category method on NSMutableRequest.
+                       
+                       Designed for iOS7+.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FMAssetStream"
+  s.homepage         = "https://github.com/formal-method/FMAssetStream"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kyle Shank" => "kyle.shank@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FMAssetStream.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/formal-method/FMAssetStream.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/formal_method'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

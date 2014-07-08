@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FMAssetStream/FMAssetInputStreamDelegate.h>
 
-@interface FMViewController : UIViewController
+@interface FMViewController : UIViewController <FMAssetInputStreamDelegate>
 
 @end

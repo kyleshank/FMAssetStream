@@ -1,12 +1,15 @@
 target 'FMAssetStream', :exclusive => true do
   pod "FMAssetStream", :path => "../"
+  pod "FMProgressViewController"
 end
 
 target 'Tests', :exclusive => true do
   pod "FMAssetStream", :path => "../"
+  pod "FMProgressViewController"
 
   pod 'Specta', '~> 0.2.1'
   pod 'Expecta'
   pod 'FBSnapshotTestCase'
   pod 'EXPMatchers+FBSnapshotTest'
+  pod "FMProgressViewController"
 end

@@ -9,17 +9,9 @@
 SpecBegin(InitialSpecs)
 
 describe(@"these will fail", ^{
-
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
-
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
     
     it(@"will wait and fail", ^AsyncBlock {
-        
+        done();
     });
 });
 
