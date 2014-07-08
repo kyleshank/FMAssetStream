@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/FMAssetStream.svg?style=flat)](http://cocoadocs.org/docsets/FMAssetStream)
 [![Platform](https://img.shields.io/cocoapods/p/FMAssetStream.svg?style=flat)](http://cocoadocs.org/docsets/FMAssetStream)
 
+![FMAssetStream example in action](screenshot.jpg)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
