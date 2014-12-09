@@ -89,16 +89,24 @@
     }
 }
 
-- (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len{
-    if(read < size){
-        NSUInteger bytesRead = [self.assetRepresentation getBytes:buffer fromOffset:read length:len error:nil];
-        read += bytesRead;
-        if(self.progressDelegate!=nil){
-            [self.progressDelegate progressBytes:read totalBytes:size];
-        }
-        return bytesRead;
+- (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len {
+    if(read >= size) {
+        return 0;
     }
-    return 0;
+
+    NSUInteger bytesRead = [self.assetRepresentation getBytes:buffer fromOffset:read length:len error:nil];
+    read += bytesRead;
+    
+    // Update stream status when it's consumed
+    if(read >= size) {
+        streamStatus = NSStreamStatusAtEnd;
+    }
+    
+    if(self.progressDelegate) {
+        [self.progressDelegate progressBytes:read totalBytes:size];
+    }
+    
+    return bytesRead;
 }
 
 @end
