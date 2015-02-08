@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FMAssetStream"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A way to do streaming file uploads of ALAssets using a setAsset category method on NSMutableRequest."
   s.description      = <<-DESC
                        A way to do streaming file uploads of ALAsset's using a setAsset category method on NSMutableRequest.
